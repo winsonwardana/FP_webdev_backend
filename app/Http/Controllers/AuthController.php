@@ -114,6 +114,15 @@ class AuthController extends Controller
         -> get();
         return response()->json($data);
     }
+
+    public function updateid($id){
+
+        $data = DB::table('posts')
+        ->where('post_id',$id)
+        -> get();
+        return response()->json($data);
+    }
+
     
 
     /**

@@ -29,6 +29,7 @@ Route::patch('/updatePost/{detail}','AuthController@updatePost');
 Route::post('/comment','AuthController@comment');
 Route::get('/detailID','AuthController@detailid');
 Route::get('/welcome','AuthController@index');
+Route::post('/update/{id}','AuthController@updateid');
 
 Route::get('/detailComment','AuthController@detailcomment');
 
